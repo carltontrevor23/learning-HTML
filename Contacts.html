@@ -3,14 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacts La Grande</title>
-    <link rel="stylesheet" href="ContactStyle.css">
-    <link rel="icon" href="Favicon.jpg">
+    <title>Contact us</title>
+    <link rel="stylesheet" href="ContactsStyle.css">
+    <link rel="icon" href="Images/Favicon.jpg">
 </head>
 <body>
     <header>
+        <section class="container">
+            <div class="container1">
+                <span><img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel"></span>
+                <span><p>La Grande</p></span>
+                <span><p>Hotel</p></span>
+                <span><p>De Paris</p></span>
+            </div>
+            <div class="container1">
+                <input type ="button" value = "Sign in">
+                <input type ="button" value ="Login">
+                
+            </div>
+        </section>
         <section id="Name">
-            <p >Hotel La Grande De Paris</p>
+            <p >La Grande Hotel De Paris</p>
             
             <nav>
                 <ul id="navbar">
@@ -23,8 +36,59 @@
         </section>
     </header>
     <main>
-        <iframe src="https://www.google.com/maps/@0.349053,32.5614387,17z?entry=ttu" title="This is the location of hotel La Grande" width="600" height="450" style="border:0;" allowfullscreen="" loading="eager"></iframe>
+        <div id="Location">
+            <h1>Our Location</h1>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15958.993161371305!2d32.55876487735058!3d0.3394718518942151!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x177dbae1bd08e9b3%3A0x7ec5351e3d60a726!2sHotel%20La%20Grande!5e0!3m2!1sen!2sug!4v1711222550965!5m2!1sen!2sug" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" id="map"></iframe>
+        <div id="Location">
+            <h1>Contact us</h1>
+        </div>
+        <div id="form">
+            <form action="submit-form.php" method="post">
+                    <label for="problem">What can we help you with</label><br>
+                    <select id="problem" name="problem" style="width:500px;height:50px; font-size: large;">
+                        <option value="problem1">You can't locate us</option>
+                        <option value="problem2">There is a problem with the online booking</option>
+                        <option value="problem3">You need more information about la Grande</option>
+                        <option value="problem4">There is a problem with one of our staff</option>
+                        <option value="problem5">Others</option>
+                    </select><br>
+                    <label for="name">Your name</label><br>
+                    <input type="text" id="name" name="name" required style="width:500px;height:50px; font-size: large;"><br>
+                    <label for="email">E-mail address associated with your La Grande account</label><br>
+                    <input type="email" name="value" id="email" required style="width:500px;height:50px; font-size: large;"  pattern="[a-z0-9]+@[a-z0-9]+.[a-z]" placeholder="LaGrande@fake.com"><br>
+                    <label for="subject">Subject:</label><br>
+                    <input type="text" id="subject" name="subject" required style="width:500px;height:50px; font-size: large;"><br>
+                    <label for="Details">Details:</label><br>
+                    <textarea id="Details" name="Details" rows="20" cols="70" required></textarea><br>
+            </form>
+        </div>
+        <div id="Contact">
+            <div class="Contact1">
+                <h2>Address</h2>
+                <p>La Grande Hotel De Paris</p>
+                <p>Plot 1, Kampala Road</p>
+                <p>Kampala, Uganda</p>
+            </div>
+            <div class="Contact1">
+                <h2>Phone</h2>
+                <p>+256 700 000 000</p>
+                <p>+256 800 000 000</p>
+            </div>
+            <div class="Contact1">
+                <h2>Email</h2>
+                <p>LaGrande@fake.com</p>
     </main>
+    <footer>
+        <div>
+            <img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel">
+        </div>
+        <div>
+            <p>Copyright &copy; 2021 La Grande De Paris</p>
+            <p>All rights reserved</p>
+            <a href="mail to laGrande@fake.com"><p>LaGrande@fake.com</p></a>
+        </div>
+    </footer>
     
 </body>
 </html>
