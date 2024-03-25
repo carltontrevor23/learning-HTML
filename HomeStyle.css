@@ -1,8 +1,8 @@
 body{
     Max-width: 1200px;
-    background-color: burlywood;
+    background-color: whitesmoke;
     color:#000;
-    border:3px solid black;
+    border:3px solid white;
     margin:auto;
     min-height: 100vh;
 }
@@ -97,7 +97,6 @@ div.welcome strong{
 }
 div.welcome{
     background-color: antiquewhite;
-    box-shadow: 10px 10px 10px 10px grey;
     border-radius: 20px;
     padding-right:5px;
     height: 320px;
@@ -109,6 +108,11 @@ div.welcome{
     margin-left: 10px;
     height: 320px;
     max-width: 600px;
+}
+.welcome:hover{
+    box-shadow: 10px 10px 10px 10px grey;
+    height: 400px;
+    font-size:large;
 }
 
 .imgContainer{
@@ -152,4 +156,11 @@ div.welcome{
 }
 .slider-nav> a:hover{
     opacity: 1;
+}
+hr{
+    size: 2em;
+    box-shadow: 5em 5em 5em 5%;
+}
+main{
+    background-color: burlywood;
 }
