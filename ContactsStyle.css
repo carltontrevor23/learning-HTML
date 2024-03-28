@@ -1,10 +1,10 @@
 body{
-    Max-width: 1200px;
-    background-color: whitesmoke;
+    background-image: url("Images/background.jpg");
+    background-size: cover;
     color:#000;
-    border:3px solid white;
     margin:auto;
     min-height: 100vh;
+    color: white;
 }
 /*this is give the whole body a maximum width and change the background color to white and also place it in the middle of the webpage of the browser*/
 .container{
@@ -40,7 +40,7 @@ body{
     color:gold;
     text-align: center;
     background-image: url("Images/Banner2.jpg");
-    background-size: cover;
+    background-size: contain;
     height:300px;
 }
 /*this is to design the navigation bar horizonatallyand to set it's background and the basic styling*/
@@ -89,7 +89,6 @@ body{
 
 #Location{
     height: 100px;
-    background-color: aqua;
     text-align: center;
     border-radius: 5%;
 }
@@ -103,7 +102,7 @@ body{
 /*this is to design the map of the location*/
 #map{
     width: 100%;
-    height: 500px;
+    height: 1000px;
 }
 /*this is to design the form of the page*/
 #form{
@@ -129,4 +128,10 @@ footer{
 }
 footer div{
     flex: 1;
+    padding: 10px;
+}
+#Submit{
+    background-color: antiquewhite;
+    font-size: large;
+    border-radius: 5px;
 }
