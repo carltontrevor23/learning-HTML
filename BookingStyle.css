@@ -102,6 +102,17 @@ img{
     max-height: 600px;
     background-color: rgb(159, 141, 118);
     font-size: xx-large;
+    position: relative;
+}
+.ContainerSmall input[type="button"]{
+    padding: 10px;
+    margin: auto;
+    align-items: right;
+    border:none;
+    position: absolute;
+    right: 10%;
+    bottom: 10%;
+
 }
 footer{
     display: flex;
