@@ -1,0 +1,73 @@
+body{
+    background-color: rgb(98, 81, 81);
+    color:#000;
+    border:3px solid white;
+    margin:auto;
+    min-height: 100vh;
+}
+/*this is give the whole body a maximum width and change the background color to white and also place it in the middle of the webpage of the browser*/
+.container{
+    display:flex;
+    border:none;
+
+}
+/*this to align the top span horizontal by setting the outer container's display to flex and the inner elements' flex = 1*/
+.container .container1{
+    flex:1;
+    padding:10px;
+    display: flex;
+}
+/*this is for the top spans of the web page*/
+.container1 > span{
+    padding-left : 30px;
+    font-family:'Times New Roman', Times, serif'Times New Roman', Times, serif;
+    font-size: large;
+}
+/*this is for the button of sign in and login in at the top*/
+.container1 input[type="button"]{
+   flex: 1;
+   max-width: 100px;
+   padding: 10px;
+   border-radius: 20%;
+   margin: auto;
+   align-items: right;
+}
+.container1 a{
+    flex: 1;
+    max-width: 100px;
+    padding: 30px;
+}
+#slider{
+    width: 100%;
+    height: 1200px;
+}
+#details{
+    width: 80%;
+    height: 5%;
+    background-color: rgb(247, 239, 160);
+    margin-left: auto;
+    margin-right: auto;
+}
+#amenities{
+    display: flex;
+}
+#amenities > ul{
+    flex:1;
+}
+#book_now{
+    margin-right: 50%;
+    margin-left: 50%;
+    padding: 10px;
+    font-size: large;
+    font-weight: 400;
+    cursor: pointer;
+
+}
+footer{
+    display: flex;
+    background-color: grey;
+}
+footer div{
+    flex: 1;
+    padding: 10px;
+}
