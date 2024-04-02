@@ -28,9 +28,13 @@ body{
    flex: 1;
    max-width: 100px;
    padding: 10px;
-   border-radius: 20%;
+   border:none;
    margin: auto;
    align-items: right;
+   transition: font-size 1s;
+}
+.container1 input[type="button"]:hover{
+    font-size: x-large;
 }
 .container1 a{
     flex: 1;
@@ -61,7 +65,11 @@ body{
     font-size: large;
     font-weight: 400;
     cursor: pointer;
+    transition: font-size 1s;
 
+}
+#book_now:hover{
+    font-size:x-large;
 }
 footer{
     display: flex;
@@ -70,4 +78,9 @@ footer{
 footer div{
     flex: 1;
     padding: 10px;
+}
+header{
+  position: fixed;
+  right: 0;
+  left: 0;
 }
