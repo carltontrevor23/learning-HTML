@@ -99,7 +99,7 @@ img{
 }
 .ContainerSmall{
     flex:1;
-    max-height: 600px;
+    max-height: 900px;
     background-color: rgb(159, 141, 118);
     font-size: xx-large;
     position: relative;

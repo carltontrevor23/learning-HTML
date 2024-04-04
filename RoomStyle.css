@@ -24,6 +24,23 @@ body{
     font-size: large;
 }
 /*this is for the button of sign in and login in at the top*/
+
+/*This is the animation*/
+@keyframes bounce{
+    0%,
+    20%,
+    50%,
+    80%,
+    100%{
+        transform: translateY(0);
+    }
+    40%{
+        transform: translateY(-30px)
+    }
+    60%{
+        transform: translateY(-15px);
+    }
+}
 .container1 input[type="button"]{
    flex: 1;
    max-width: 100px;
@@ -31,7 +48,7 @@ body{
    border:none;
    margin: auto;
    align-items: right;
-   transition: font-size 1s;
+   
 }
 .container1 input[type="button"]:hover{
     font-size: x-large;
@@ -66,6 +83,7 @@ body{
     font-weight: 400;
     cursor: pointer;
     transition: font-size 1s;
+    animation: bounce 1s infinite;
 
 }
 #book_now:hover{

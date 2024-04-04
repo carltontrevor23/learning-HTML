@@ -149,14 +149,22 @@ img{
     z-index: 1;
 }
 .slider-nav> a{
-    width:0.5rem;
-    height: 0.5rem;
+    width:0.7em;
+    height: 0.7em;
     border-radius: 50%;
-    background-color: white;
-    opacity:0.5;
+    background-color:transparent;
+    border:2px solid rgb(249, 249, 249);
+    transition: all 0.5s;
 }
 .slider-nav> a:hover{
-    opacity: 1;
+    border-color: purple;
+    width: 1.5em;
+    height: 1.5em;
+}
+.slider-nav> a:active{
+    width: 3em;
+    height: 3em;
+    
 }
 hr{
     size: 2em;
