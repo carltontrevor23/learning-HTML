@@ -1,7 +1,7 @@
 let index=0;
-let images=["Images/image1.jpeg","Images/image2.jpeg","Images/image3.jpeg","Images/image4.jpeg","Images/image5.jpg","Images/image6.jpg"];
+let images=["Images/image7.jpeg","Images/familybreakfast.jpg","Images/family6.jpeg","Images/background.jpg"];
 function changeImage(){
-    let imgElement=document.getElementById("slider");
+    let imgElement=document.getElementById("slider")
     if(imgElement){
         imgElement.src=images[index];
         index=(index+1)%images.length;
