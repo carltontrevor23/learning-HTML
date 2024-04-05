@@ -11,14 +11,14 @@
         <header>
             <section class="container">
                 <div class="container1">
-                    <span><img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel"></span>
+                    <span><img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1"></span>
                     <span><p>La Grande</p></span>
                     <span><p>Hotel</p></span>
                     <span><p>De Paris</p></span>
                 </div>
                 <div class="container1">
                     <input type ="button" value = "Sign in">
-                    <input type ="button" value ="Login">
+                    <input type ="button" value ="Login" class="btn" onclick="openPopup()">
                     
                 </div>
             </section>
@@ -77,6 +77,15 @@
                 <div class="ContainerSmall">
                     <img src="Images/Family1.jpeg" alt="This is room one">
                 </div>
+                <div class="popup open"  id="popup">
+                    <img src="Images/Favicon.jpg" alt="this is an image">
+                    <h2>Login</h2>
+                    <br>
+                    <input type="text" placeholder="Username">
+                    <input type="password" placeholder="Password">
+                    <button onclick="closePopup()">Login</button>
+                    <p>Or sign with a social network:</p><br>
+                </div>
                 <div class="ContainerSmall">
                     <h2>BRIDAL SUITE</h2>
                     <p>This is consists of one bedroom with the lovy theme and the bathrooms with all the ammedimetes of ours<br></p>
@@ -94,7 +103,7 @@
         </main>
         <footer>
             <div>
-                <img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel">
+                <img src="Images/Favicon.jpg" style="width: 100px;" alt="the logo of La Grande Hotel" id="logo1">
             </div>
             <div>
                 <p>Copyright &copy; 2021 La Grande De Paris</p>
@@ -102,5 +111,14 @@
                 <a href="mail to laGrande@fake.com" title="mail to us"><p>LaGrande@fake.com</p></a>
             </div>
         </footer>
+        <script>
+            let popup = document.getElementById("popup");
+            function openPopup(){
+                popup.classList.add("open");
+            }
+            function closePopup(){
+                popup.classList.remove("open"); 
+            }
+        </script> 
     </body>
 </html>
