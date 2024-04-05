@@ -1,5 +1,5 @@
 let index=0;
-let images=["Images/image7.jpeg","Images/familybreakfast.jpg","Images/family6.jpeg","Images/background.jpg"];
+let images=["Images/image6.jpg","Images/presidentialsuite.jpg","Images/banner3.jpg","Images/background.jpg"];
 function changeImage(){
     let imgElement=document.getElementById("slider")
     if(imgElement){
