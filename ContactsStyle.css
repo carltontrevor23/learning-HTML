@@ -96,6 +96,8 @@ body{
 #Location h1{
     font-size: 50px;
     font-family: 'Times New Roman', Times, serif;
+    background: transparent;
+    backdrop-filter: blur(20px);
     color: black;
     padding-top: 20px;
 }
@@ -110,8 +112,26 @@ body{
     justify-content: center;
     align-items: center;
     margin-top: 20px;
+    background: transparent;
+}
+#form input{
+    background: transparent;
+    backdrop-filter: blur(20px);
+    color: #fff;
+}
+#form textarea{
+    background: transparent;
+    color: #fff;
+    font-weight: 500;
+}
+#form select{
+    background: transparent;
+    color: #fff;
+    font-size: x-large;
 }
 form{
+    background: transparent;
+    backdrop-filter: blur(20px);
     box-shadow: 5px 5px 10px 5px gray;
     font-size: large;
 }
