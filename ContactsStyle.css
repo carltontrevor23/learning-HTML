@@ -156,3 +156,9 @@ footer div{
     font-size: large;
     border-radius: 5px;
 }
+/*for the logo*/
+#logo1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
