@@ -1,6 +1,6 @@
 let index=0;
 //this is the counter of the images in the array
-let images=["Images/image6.jpg","Images/presidentialsuite.jpg","Images/banner3.jpg","Images/background.jpg"];
+let images=["Images/image6.jpg","Images/presidentialsuite.jpg","Images/Banner3.jpg","Images/background.jpg"];
 //this is the array of the images to display
 function changeImage(){
     let imgElement=document.getElementById("slider")
@@ -18,5 +18,5 @@ function changeImage(){
     }
     
 }
-setInterval(changeImage,3000);
+setInterval(changeImage,5000);
 //this will call the function changeImage every 3seconds
