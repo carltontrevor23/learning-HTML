@@ -94,7 +94,7 @@ img{
     background-color: silver;
     font-size: x-large;
     position: relative;
-    font-family: Helvetica, Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
 }
 .ContainerSmall input[type="button"]{
     padding: 10px;
