@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>login</title>
+    <link rel="stylesheet" href="popup.css">
+    <link rel="icon" href="Images/Favicon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <button class="btn" onclick="openPopup()">Login</button>
+        <div class="popup open"  id="popup">
+            <img src="Images/Favicon.jpg" alt="this is an image">
+            <h2>Login</h2>
+            <br>
+            <input type="text" placeholder="Username">
+            <input type="password" placeholder="Password">
+            <button onclick="closePopup()">Login</button>
+            <p>Or sign with a social network:</p><br>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup");
+        function openPopup(){
+            popup.classList.add("open");
+        }
+        function closePopup(){
+            popup.classList.remove("open"); 
+        }
+    </script>    
+</body>
+</html>
+
+
+
+
+
+
+
+
+

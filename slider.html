@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>slider</title>
+    <style>
+        #slider{
+            position: relative;
+            max-width: 100%;
+            margin:0 auto;
+            overflow: hidden;
+            }
+        #slider figure{
+            display: flex;
+            aspect-ratio: 16/9;
+            overflow-x: auto;
+            scroll-snap-type: x mandatory; 
+            scroll-behavior: smooth;
+            box-shadow: 0 1.5rem 3rem -0.75rem hsla(0,0%,0%,0.25);
+            border-radius:0.5rem;
+        }
+        #slider img{
+            flex:1 0 100%;
+            scroll-snap-align:start;
+            object-fit:cover;
+            animation: slider 20s linear infinite;
+        }
+        .slider-nav{
+            display: flex;
+            column-gap:1rem;
+            position: absolute;
+            bottom:1.25rem;
+            left:50%;
+            transform: translateX(-50%);
+            z-index: 1;
+        }
+        .slider-nav> a{
+            width:0.7em;
+            height: 0.7em;
+            border-radius: 50%;
+            background-color:transparent;
+            border:2px solid rgb(249, 249, 249);
+            transition: all 0.5s;
+        }
+        .slider-nav> a:hover{
+            border-color: purple;
+            width: 1.5em;
+            height: 1.5em;
+        }
+        .slider-nav> a:active{
+            width: 3em;
+            height: 3em;
+            
+        }
+        @keyframes slider{
+            0%{
+                transform:translateX(0);
+            }
+            20%{
+                transform: translateX(0);
+            }
+            25%{
+                transform: translateX(-100%);
+            }
+            45%{
+                transform: translateX(-100%);
+            }
+            50%{
+                transform: translateX(-200%);
+            }
+            70%{
+                transform: translateX(-200%);
+            }
+            75%{
+                transform: translateX(-300%);
+            }
+            95%{
+                transform: translateX(-300%);
+            }
+            100%{
+                transform: translateX(-400%);
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div id="slider">
+        <figure>
+            <img src="Images/image4.jpeg" alt="This is the over view of La Grande" id="slide-1">
+            <img src="Images/familytime.jpeg" alt="This is the over view of La Grande" id="slide-2">
+            <img src="Images/image5.jpg" alt="This is the over view of La Grande" id="slide-3">
+            <img src="Images/image6.jpg" alt="This is the over view of La Grande" id="slide-4">
+            <img src="Images/image4.jpeg" alt="This is the over view of La Grande" id="slide-5">
+        </figure>
+        <div class="slider-nav">
+            <a href="#slide-1"></a>
+            <a href="#slide-2"></a>
+            <a href="#slide-3"></a>
+            <a href="#slide-4"></a>
+            <a href="#slide-5"></a>
+        </div>
+    </div>
+        
+</body>
+</html>

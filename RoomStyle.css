@@ -1,10 +1,56 @@
 body{
-    background-color: rgb(98, 81, 81);
+    background-image: url("Images/background.jpg");
     color:#000;
     border:3px solid white;
     margin:auto;
     min-height: 100vh;
 }
+/*this is to remove the bulleting points on the list items of the navigation bar*/
+/*this is to design the navigation bar horizonatallyand to set it's background and the basic styling*/
+#navbar{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: silver;
+    border:3px solid gray;
+    width:1000px;
+    height: 50px;
+    border-radius: 20px;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 160px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    
+
+}
+/*this is to design the a tag of the navigation bar*/
+#navbar a{
+    text-decoration: none;    
+    display:inline-block;
+    text-align: center;
+}
+/*this is to remove the bulleting points on the list items of the navigation bar*/
+#navbar li{
+    list-style-type:none;
+    font-size: large;
+
+    
+}
+/* this is to set the pseudo hover  class of the navigation bar*/
+#navbar a:hover{
+    background-color: aliceblue;
+    color: white;
+}
+/*this is to set the pseudo active class of the navigation bar*/
+#navbar a:active{
+    background-color: white;
+    color: black;
+}
+/*lastly this is for setting the pseudo visited clas of the navigation bar*/
+#navbar a:visited{
+    color: purple;
+}/* the above code is going to be common on all webpage of the website*/
+
 /*this is give the whole body a maximum width and change the background color to white and also place it in the middle of the webpage of the browser*/
 .container{
     display:flex;
@@ -20,12 +66,12 @@ body{
 /*this is for the top spans of the web page*/
 .container1 > span{
     padding-left : 30px;
-    font-family:'Times New Roman', Times, serif'Times New Roman', Times, serif;
+    font-family:Arial, Helvetica, sans-serif;
     font-size: large;
 }
 /*this is for the button of sign in and login in at the top*/
 
-/*This is the animation*/
+/*This is the animation for the book now button*/
 @keyframes bounce{
     0%,
     20%,
@@ -41,6 +87,7 @@ body{
         transform: translateY(-15px);
     }
 }
+/*this will produce a bouncing button*/
 .container1 input[type="button"]{
    flex: 1;
    max-width: 100px;
@@ -50,31 +97,43 @@ body{
    align-items: right;
    
 }
+/*this is to edit the size the style of the signup/login button and back button*/
 .container1 input[type="button"]:hover{
     font-size: x-large;
 }
+/*this is to and effect when the cursor hovers above the buttons*/
+
 .container1 a{
     flex: 1;
     max-width: 100px;
     padding: 30px;
 }
+/*this edits the upper section of the pages*/
 #slider{
     width: 100%;
-    height: 1200px;
+    height:1100px;
+    object-fit: cover;
 }
+/*this edits the image slider in the room page*/
 #details{
     width: 80%;
     height: 5%;
-    background-color: rgb(247, 239, 160);
     margin-left: auto;
     margin-right: auto;
+    color: silver;
+    font-size: large;
 }
+/*this edits the details of the room or suite*/
 #amenities{
     display: flex;
+    font-size: xx-large;
+    color: antiquewhite;
 }
+/*this edits the amenities of the room*/
 #amenities > ul{
     flex:1;
 }
+/*this is divid the two lists so that the are displayed side by side*/
 #book_now{
     margin-right: 50%;
     margin-left: 50%;
@@ -82,23 +141,32 @@ body{
     font-size: large;
     font-weight: 400;
     cursor: pointer;
-    transition: font-size 1s;
+    transition: font-size 0.5s;
     animation: bounce 1s infinite;
 
 }
+/*this is to edit the booknow button*/
 #book_now:hover{
     font-size:x-large;
 }
+/*this is the effect when the cursor*/
 footer{
     display: flex;
-    background-color: grey;
+    background-color: silver;
 }
 footer div{
     flex: 1;
     padding: 10px;
 }
+/*this is to edit the footer of the pages*/
 header{
   position: fixed;
   right: 0;
   left: 0;
+}
+/*for the logo*/
+#logo1{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
 }
