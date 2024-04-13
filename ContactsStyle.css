@@ -83,11 +83,6 @@ body{
     background-color: white;
     color: black;
 }
-/*lastly this is for setting the pseudo visited clas of the navigation bar*/
-#navbar a:visited{
-    color: purple;
-}/* the above code is going to be common on all webpage of the website*/
-
 #Location{
     height: 100px;
     text-align: center;
@@ -114,6 +109,7 @@ body{
     align-items: center;
     margin-top: 20px;
     background: transparent;
+    font-family: "Montserrat";
 }
 #form input{
     background: transparent;
