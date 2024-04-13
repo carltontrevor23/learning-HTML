@@ -30,9 +30,13 @@ body{
 }
 /*this is to design the a tag of the navigation bar*/
 #navbar a{
-    text-decoration: none;    
+   text-decoration: none;    
     display:inline-block;
     text-align: center;
+    padding: 10 px 15px;
+    color: silver;
+    margin: 0 10px;
+    font-family: "Montserrat";
 }
 /*this is to remove the bulleting points on the list items of the navigation bar*/
 #navbar li{
